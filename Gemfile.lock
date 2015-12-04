@@ -34,6 +34,7 @@ GEM
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     slop (3.6.0)
+    sqlite3 (1.3.11)
     thread_safe (0.3.5)
     tilt (2.0.1)
     tzinfo (1.2.2)
@@ -47,6 +48,7 @@ DEPENDENCIES
   bcrypt
   pry
   sinatra
+  sqlite3
 
 BUNDLED WITH
    1.10.6
