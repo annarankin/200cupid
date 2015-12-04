@@ -1,0 +1,28 @@
+
+<% if @user %>
+<h1>Hey there <%= @user.name %>! Looking good.</h1>
+<% else %>
+<h1>Hi and welcome to 200Cupid!</h1>
+<% end %>
+
+<img class="med-img" src="/img/heart.png" alt="heart">
+
+
+<% if @user %>
+<!-- If the user is logged in, show them links to privileged info -->
+
+<p><a href="/users">View users!</a></p>
+<p><a href="/visits">Who's visited you?</a></p>
+
+<form action="/sessions" method="POST">
+  <input type="hidden" name="_method" value="delete">
+  <button>Log Out.</button>
+</form>
+
+<% else %>
+<!-- If they're not logged in, just give them an opportunity to do so -->
+
+<p><a href="/login">Log In</a></p>
+<p><a href="/users/new">Sign Up!</a></p>
+
+<% end %>

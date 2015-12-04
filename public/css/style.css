@@ -1,0 +1,27 @@
+body {
+  background: salmon;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.wrapper {
+  padding: 2em;
+  text-align: center;
+  background-color: #FFF;
+  max-width: 700px;
+  margin: 1em auto;
+}
+.med-img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.sml-img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+ul.user-list li {
+  display: inline-block;
+}

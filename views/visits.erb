@@ -1,0 +1,12 @@
+<h1>All your visitors:</h1>
+<% if @visits %>
+
+<ul>  
+  <% @visits.each do |visit| %>
+    <li><%= visit.visitor.name %>, visited at <%= visit.created_at %></li>
+  <% end %>
+</ul>
+
+<% else %>
+  <h3>No visitors yet!</h3>
+<% end %>
