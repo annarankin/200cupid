@@ -1,9 +1,15 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
-gem "pry"
 gem "activerecord"
 gem "sinatra"
 gem "bcrypt"
-gem "sqlite3"
+
+group :development do
+  gem "pry"
+  gem "sqlite3"
+end
+
+group :production do
+  gem "pg"
+end
